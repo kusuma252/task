@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="picture.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">YAY! It’s BOGO</h1>
+    
+    <div class="card">
+      <label class="option">
+        <input type="radio" name="offer" value="10" checked onclick="updatePrice(1, 10)">
+        <div style="margin-top: 13px;">
+          <span class="offer-title">1 Unit</span> <span class="discount" style="background: #f45b69;border: 1px solid ;border-radius: 10px;padding: 1px;
+    color: #fff;">10% Off</span><br/>
+          <span style="font-size: 12px;"">Standard Price</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price" style="
+          margin-left: 48px;
+      ">$10.00 USD</span><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="old-price" style="
+    margin-left: 150px;"">$24.00 USD</span>
+        </div>
+      </label>
+    </div>
+
+  
+
+
+
+    
+    <!--<div class="card popular">
+      <label class="option">
+        <input type="radio" name="offer" value="20" onclick="updatePrice(2, 18)">
+          <div style="margin-top: 13px;">
+          <span class="offer-title">2 Unit</span> <span class="discount" style="background: #f45b69 ;border: 1px solid;border-radius: 10px;padding: 1px;
+    color: #fff;">20% Off</span><br/>
+          <span style="font-size: 12px;"">Standard Price</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price" style="
+          margin-left: 48px;
+      ">$18.00 USD</span><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="old-price" style="
+    margin-left: 166px;"">$24.00 USD</span>
+          </div>     
+      </label>
+    </div>-->
+      <br>
+      
+      <div class="container">
+        <div class="most-popular">MOST POPULAR</div>
+        <div class="header">
+            <div class="radio-label">
+                <input type="radio" id="option1" name="unit" value="2 Unit">
+               <span class="offer-title">2 Unit</span>
+                <span class="discount">20% Off</span>
+            </div>
+            <div class="price-section">
+                <span>$18.00 USD</span><br>
+                <span class="original-price">$24.00 USD</span>
+            </div>
+        </div>
+        <form>
+            <div class="row">
+                <label>#1</label>
+                <select name="size1" id="size1">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <select name="colour1" id="colour1">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                </select>
+            </div>
+            <div class="row">
+                <label>#2</label>
+                <select name="size2" id="size2">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <select name="colour2" id="colour2">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                </select>
+            </div>
+        </form>
+    </div>
+      <br>
+      
+    <div class="card">
+      <label class="option">
+        <input type="radio" name="offer" value="10" checked onclick="updatePrice(1, 10)">
+        <div style="margin-top: 13px;">
+          <span class="offer-title">3 Unit</span> <span class="discount" style="background: #f45b69 ;border: 1px solid;border-radius: 10px;padding: 1px;
+    color: #fff;">30% Off</span><br/>
+          <span style="font-size: 12px;"">Standard Price</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price" style="
+          margin-left: 48px;
+      ">$24.00 USD</span><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="old-price" style="
+    margin-left: 150px;"">$24.00 USD</span>
+        </div>
+      </label>
+    </div>
+      
+      
+    
+    
+    
+    <div class="summary">
+      <span>Free Delivery</span>
+      <span>Total: <span id="total-price">$18.00 USD</span></span>
+    </div>
+    
+    <button class="add-to-cart">+ Add to Cart</button>
+    <p class="powered">Powered by Pumper</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
